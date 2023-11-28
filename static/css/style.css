@@ -1,68 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
-*{
-    box-sizing:border-box;
+
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'helvetica';
 }
-html{
+
+html {
     font-size: 62.5%;
     font-family: 'Montserrat';
 }
+
 body {
-	background: url("/static/images/templatemo-wave-banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	color: #fff;
-	font-size: 2rem;
-	text-align:center;
-	letter-spacing:1.2px;
+    background: url("/static/images/wallpaper.png");
+    height: 100px;
+    width: 100vw;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1.2px;
 }
-h1{
+
+h1 {
     padding: 3rem 0rem;
 }
-h3{
+
+h3 {
     padding: 3rem 0rem;
-    color: darkblue;
+    color: white;
     text-align: center;
 }
+
 .login {
     width: 70%;
     margin: 2rem auto;
 }
-.container{
+
+.container {
     width: 100%;
     height: 4rem;
     display: flex;
 }
-.container label{
+
+.container label {
     text-align: right;
     width: 25%;
     margin: auto 1rem;
 }
-.container input,select{
+
+.container input,
+select {
     height: 100%;
     border: none;
     width: 15rem;
     margin: auto 1rem;
+    text-align: center;
     padding: .3rem .5rem;
     font-weight: 500;
+    background-color: #DAFFFB;
     font-size: 1.8rem;
     border-radius: 1rem;
     outline: none;
 }
-.btn{
+
+.btn {
     border: none;
     border-radius: 1rem;
     width: 100%;
+    background-color: #64CCC5;
+    color: #001C30;
     margin: auto 0rem;
+    font-family: 'Google sans';
+    font-weight: bold;
     padding: .8rem 0rem;
     font-weight: 500;
     font-size: 2rem;
 }
-.btn:hover{
-    background-color: blue;
-    color: white;
+
+.btn:hover {
+    background-color: #DAFFFB;
+    color: black;
     transition-property: all;
     transition-duration: .4s;
     transition-timing-function: ease-in-out;

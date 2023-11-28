@@ -109,7 +109,7 @@ def predict():
     if data['typename']=='Workstation':
         features[50]=1
     features=scalar.transform([features])
-    prediction=model.predict(features)[0]
+    prediction=model.predict(features)[0]*80
     return render_template('index.html',prediction=f'{prediction:.2f}')
 
 app.run()

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop Price Prediction | Machine Learning</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
@@ -13,22 +14,22 @@
         <form action="{{url_for('predict')}}" method="post">
             <div class="container">
                 <label for="ram">RAM</label>
-                <input type="text" name="Ram" id='ram' placeholder="(in GBs)" required>
+                <input type="number" name="Ram"  id='ram' placeholder="(in GBs)" required>
             </div>
             <br>
             <div class="container">
                 <label for="memory">Storage(in GBs)</label>
-                <input type="text" name="memory_ssd" id="ssd-memory" placeholder="SSD" required>
-                <input type="text" name="memory_hdd" id="hdd-memory" placeholder="HDD" required>
-                <input type="text" name="memory_hybrid" id="hybrid-memory" placeholder="Hybrid" required>
-                <input type="text" name="memory_flash" id="flash-memory" placeholder="Flash" required>
+                <input type="number" name="memory_ssd" id="ssd-memory" placeholder="SSD" required>
+                <input type="number" name="memory_hdd" id="hdd-memory" placeholder="HDD" required>
+                <input type="number" name="memory_hybrid" id="hybrid-memory" placeholder="Hybrid" required>
+                <input type="number" name="memory_flash" id="flash-memory" placeholder="Flash" required>
             </div>
             <br>
             <div class="container">
                 <label for="resolution">Resolution</label>
-                <input type="text" name="screen_width" placeholder="width" required>
+                <input type="number" name="screen_width" placeholder="width" required>
                 <h2 style="margin: auto 0rem;">X</h3>
-                <input type="text" name="screen_height" placeholder="height" required>
+                <input type="number" name="screen_height" placeholder="height" required>
             </div>
             <br>
             <div class="container">
@@ -122,7 +123,7 @@
     </div>
 
     <div>
-        <h3>Predicted price is {{prediction}}$</h3>
+        <h3>Predicted price is &#8377; {{prediction}}</h3>
     </div>
 </body>
 </html>
